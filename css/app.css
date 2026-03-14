@@ -1,54 +1,66 @@
+/* Import a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* General page setup */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  background: #f9fafc;   /* light background */
+  color: #333;
   line-height: 1.6;
 }
 
 /* Header */
 header {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  background: #4a90e2;   /* accent blue */
 }
 
 #logo {
-  width: 200px;   /* bigger logo */
+  width: 180px;
   height: auto;
 }
 
 /* Navigation bar */
 nav {
-  background: #333;
+  background: #2c3e50;   /* dark navy */
   padding: 15px;
   text-align: center;
 }
 
 nav a {
-  color: white;
+  color: #ecf0f1;        /* light gray text */
   margin: 0 20px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #4a90e2;        /* blue accent on hover */
 }
 
 /* Sections */
 #about, #skills, #contact {
-  padding: 60px 20px;   /* more breathing room */
+  padding: 60px 20px;
   text-align: center;
-  width: 100%;          /* stretch full width */
+  width: 100%;
+}
+
+/* Section headings */
+#skills h1, #contact h1 {
+  color: #4a90e2;
+  margin-bottom: 20px;
 }
 
 /* Bio picture */
 #bioPic {
-  width: 300px;         /* larger profile picture */
+  width: 280px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50%;    /* circular profile picture */
   margin-bottom: 20px;
+  border: 5px solid #4a90e2;
 }
 
 /* Skills section */
@@ -59,12 +71,13 @@ nav a:hover {
 }
 
 .skill h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
 }
 
 /* Contact form */
 form {
-  max-width: 700px;     /* keep form readable */
+  max-width: 600px;
   margin: 0 auto;
   text-align: left;
 }
@@ -79,23 +92,24 @@ form input, form textarea {
 }
 
 form button {
-  background: #333;
+  background: #4a90e2;
   color: white;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 form button:hover {
-  background: #555;
+  background: #357ABD;   /* darker blue on hover */
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: white;
+  background: #2c3e50;
+  color: #ecf0f1;
   text-align: center;
   padding: 25px;
   font-size: 0.9rem;
